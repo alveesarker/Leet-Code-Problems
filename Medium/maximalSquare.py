@@ -47,7 +47,7 @@ class Solution(object):
         return m_a
         
         
-#Alternative optimized solution for future learning
+#Alternative optimized solution
 class Solution(object):
     def maximalSquare(self, matrix):
         if not matrix:
