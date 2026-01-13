@@ -2,7 +2,6 @@ class Solution(object):
     def largestRectangleArea(self, heights):
         n = len(heights)
 
-        # Nearest Smaller to Right
         right = [0] * n
         stack = []
         for i in range(n - 1, -1, -1):
@@ -11,7 +10,6 @@ class Solution(object):
             right[i] = stack[-1] if stack else n
             stack.append(i)
 
-        # Nearest Smaller to Left
         left = [0] * n
         stack = []
         for i in range(n):
